@@ -17,8 +17,8 @@ public class hw02_105021058 {
 		int a=0;
 		int b=0;
 		int c=0;
-		String v1="n";
-		while(v1=="n"){
+//		String v1="y";
+		while(true){
 			ip=scn.nextInt();
 			if(ip<0){
 				a=a+1;
@@ -27,7 +27,10 @@ public class hw02_105021058 {
 			}else if(ip>0){
 				c=c+1;
 			}
-			v1=scn.next();
+			System.out.println("是繼續輸入");
+			String v1=scn.next();
+			if(v1.equals("n")){break;}
+			
 		}
 		System.out.println("-:"+a);
 		System.out.println("0:"+b);
